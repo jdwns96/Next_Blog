@@ -1,10 +1,10 @@
-import { css, Global } from "@emotion/react";
+import { css, Global, Theme } from "@emotion/react";
 
 const GlobalStyle = () => {
   return <Global styles={GlobalCss} />;
 };
 
-const GlobalCss = css`
+const GlobalCss = (theme: Theme) => css`
   html,
   body,
   div,
@@ -129,6 +129,13 @@ const GlobalCss = css`
   table {
     border-collapse: collapse;
     border-spacing: 0;
+  }
+
+  html,
+  body {
+    background-color: ${theme.backgroundColor};
+    color: ${theme.fontColor};
+    transition: 0.3s;
   }
 `;
 
