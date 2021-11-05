@@ -1,10 +1,9 @@
-import { css, Theme } from "@emotion/react";
+// @https://developer.microsoft.com/en-us/fluentui#/styles/web/colors/theme-slots
+
 import type { ICheckboxStyles, ICheckStyleProps } from "@fluentui/react";
 import { getTheme } from "@fluentui/react";
 
 const theme = getTheme();
-
-export const header = (theme: Theme) => css``;
 
 // fluentUI Checkbox
 export const checkboxStyle = (styleProps: ICheckStyleProps): ICheckboxStyles => {
@@ -27,5 +26,3 @@ export const checkboxStyle = (styleProps: ICheckStyleProps): ICheckboxStyles => 
     ],
   };
 };
-
-// @https://developer.microsoft.com/en-us/fluentui#/styles/web/colors/theme-slots
