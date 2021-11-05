@@ -1,7 +1,9 @@
 const size = {};
 
 const color = {
-  gold: "brown",
+  darkgold: "#222222",
+  gold: "#615c59",
+  lightgold: "#beb598",
 };
 
 const light = {
