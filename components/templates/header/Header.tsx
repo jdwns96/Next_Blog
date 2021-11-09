@@ -1,9 +1,9 @@
-import { header } from "./style";
+import { head, headInner } from "./style";
 
 const Header = () => {
   return (
-    <header css={header} className="header">
-      <div className="header__inner"></div>
+    <header className="head" css={head}>
+      <div className="head__inner" css={headInner}></div>
     </header>
   );
 };
