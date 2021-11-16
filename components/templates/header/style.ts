@@ -33,6 +33,7 @@ export const headLogo = (theme: Theme) => css`
   position: relative;
   align-self: center;
   width: 160px;
+  cursor: pointer;
 
   ${theme.deskTop} {
     position: absolute;

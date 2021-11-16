@@ -59,10 +59,14 @@ export const tooltip = (theme: Theme) => css`
       background-color: ${theme.borderBox};
     }
     & > div:nth-child(1) {
+      /* 마름모 */
+      z-index: 9999;
+      box-shadow: none;
       border: 1px solid ${theme.border};
       background-color: ${theme.borderBox};
     }
     & > div:nth-child(2) {
+      /* 백그라운드 */
       border: 1px solid ${theme.border};
     }
   }
