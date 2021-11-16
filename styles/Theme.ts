@@ -12,21 +12,27 @@ const media = {
 };
 
 const light = {
+  border: "#000",
+  borderBox: "#e9ecef",
+  icon: "#000",
+  fontColor: "#000",
+  backgroundColor: "#e9ecef",
+
   darkgold: "#EEE",
   gold: "#615c59",
   lightgold: "#beb598",
-
-  backgroundColor: "#FFF",
-  fontColor: "#000",
 };
 
 const dark = {
+  border: "#beb598",
+  borderBox: "#222222",
+  icon: "#beb598",
+  fontColor: "#beb598",
+  backgroundColor: "#000",
+
   darkgold: "#222222",
   gold: "#615c59",
   lightgold: "#beb598",
-
-  backgroundColor: "#000",
-  fontColor: "#FFF",
 };
 
 export const lightTheme = { ...size, ...media, ...light };

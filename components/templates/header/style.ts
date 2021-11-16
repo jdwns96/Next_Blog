@@ -3,7 +3,8 @@ import { css, Theme } from "@emotion/react";
 export const head = (theme: Theme) => css`
   width: 100%;
   height: 72px;
-  border-bottom: 1px solid ${theme.gold};
+  border-bottom: 1px solid ${theme.border};
+  background-color: ${theme.borderBox};
 
   display: flex;
   justify-content: center;
@@ -28,6 +29,7 @@ export const headLogo = (theme: Theme) => css`
 export const headHamberger = (theme: Theme) => css`
   font-size: 1.25rem;
   align-self: center;
+  color: ${theme.icon};
 
   cursor: pointer;
 

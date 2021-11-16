@@ -18,15 +18,15 @@ const Home: NextPage = (props) => {
     <>
       <Header />
 
-      {/* <button
+      <button
         onClick={useCallback((e) => {
           // @ts-ignore
           props.setMode((prev) => !prev);
         }, [])}
       >
-        @ts-ignore
+        {/* @ts-ignore */}
         {props.mode ? "dark" : "light"}
-      </button> */}
+      </button>
       <Footnav />
       <Footer />
     </>

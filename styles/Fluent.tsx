@@ -1,7 +1,6 @@
 // @https://developer.microsoft.com/en-us/fluentui#/styles/web/colors/theme-slots
 
 import type { ICheckboxStyles, ICheckStyleProps } from "@fluentui/react";
-import type { IButtonStyles } from "@fluentui/react";
 import { getTheme } from "@fluentui/react";
 
 const theme = getTheme();
