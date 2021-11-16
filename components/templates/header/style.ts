@@ -15,15 +15,21 @@ export const head = (theme: Theme) => css`
 `;
 
 export const headInner = (theme: Theme) => css`
-  width: 90%;
+  width: 95%;
   height: 100%;
 
   display: flex;
   justify-content: space-between;
+  ${theme.deskTop} {
+    width: 90%;
+    max-width: 1920px;
+  }
 `;
 
 export const headLogo = (theme: Theme) => css`
   align-self: center;
+
+  width: 160px;
 `;
 
 export const headHamberger = (theme: Theme) => css`
@@ -52,8 +58,17 @@ export const headLoginBox = (theme: Theme) => css`
 `;
 
 export const memberBtn = (theme: Theme) => css`
-  background-color: black;
-
+  background-color: ${theme.btn};
+  border-color: ${theme.border};
+  color: #000;
+  &:hover {
+    background-color: ${theme.btn};
+    border-color: ${theme.border};
+  }
+`;
+export const loginBtn = (theme: Theme) => css`
+  border-color: ${theme.border};
+  color: ${theme.fontColor};
   &:hover {
   }
 `;

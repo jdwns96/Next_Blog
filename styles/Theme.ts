@@ -12,11 +12,15 @@ const media = {
 };
 
 const light = {
-  border: "#000",
-  borderBox: "#e9ecef",
-  icon: "#000",
   fontColor: "#000",
   backgroundColor: "#e9ecef",
+
+  border: "#000",
+  borderBox: "#e9ecef",
+
+  icon: "#000",
+
+  btn: "#615c59",
 
   darkgold: "#EEE",
   gold: "#615c59",
@@ -24,11 +28,15 @@ const light = {
 };
 
 const dark = {
-  border: "#beb598",
-  borderBox: "#222222",
-  icon: "#beb598",
   fontColor: "#beb598",
   backgroundColor: "#000",
+
+  border: "#615c59",
+  borderBox: "#222222",
+
+  icon: "#beb598",
+
+  btn: "#beb598",
 
   darkgold: "#222222",
   gold: "#615c59",

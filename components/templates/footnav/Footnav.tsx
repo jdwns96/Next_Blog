@@ -14,7 +14,7 @@ const Footnav = () => {
             <span>
               <FontAwesomeIcon icon={faUserTie} />
             </span>
-            <span>whoami</span>
+            <span>소개</span>
           </li>
           <li>
             <span>
@@ -32,7 +32,7 @@ const Footnav = () => {
             <span>
               <FontAwesomeIcon icon={faCog} />
             </span>
-            <span>환경설정</span>
+            <span>설정</span>
           </li>
         </ul>
       </div>

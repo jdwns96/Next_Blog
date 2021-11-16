@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const [mode, setMode] = useState(true);
 
   return (
-    <ThemeProvider theme={mode ? lightTheme : darkTheme}>
+    <ThemeProvider theme={!mode ? lightTheme : darkTheme}>
       <GlobalStyle />
       <Head>
         <title>Goolonge</title>
