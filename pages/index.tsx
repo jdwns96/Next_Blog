@@ -4,6 +4,7 @@ import { css, Theme } from "@emotion/react";
 import { useCallback } from "react";
 
 import Header from "../components/templates/header";
+import Nav from "@components/templates/nav";
 import Body from "@components/templates/body";
 import Footnav from "@components/templates/footnav";
 import Footer from "@components/templates/footer";
@@ -18,6 +19,7 @@ const Home: NextPage = (props) => {
   return (
     <>
       <Header />
+      <Nav />
       <Body>
         <div>
           <button

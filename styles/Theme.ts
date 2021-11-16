@@ -16,7 +16,7 @@ const light = {
   backgroundColor: "#e9ecef",
 
   border: "#000",
-  borderBox: "#e9ecef",
+  borderBox: "#ddd",
 
   icon: "#000",
 
