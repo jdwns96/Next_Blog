@@ -4,7 +4,8 @@ export const footnav = (theme: Theme) => css`
   width: 100%;
   height: 72px;
 
-  position: sticky;
+  /* position: sticky; */
+  position: fixed;
   bottom: 0;
 
   border-top: 1px solid ${theme.border};
@@ -60,5 +61,31 @@ export const footnavList = (theme: Theme) => css`
   }
 
   ${theme.deskTop} {
+  }
+`;
+
+export const link = (theme: Theme) => css`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+
+  width: 100%;
+  height: 100%;
+  span {
+    align-self: center;
+
+    &:nth-child(1) {
+      color: ${theme.icon};
+      font-size: 1.25rem;
+      padding: 0.5rem;
+    }
+
+    &:nth-child(2) {
+      font-size: 0.8rem;
+    }
   }
 `;

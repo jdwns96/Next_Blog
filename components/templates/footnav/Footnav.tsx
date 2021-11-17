@@ -1,5 +1,7 @@
+import Link from "next/link";
+
 //style
-import { footnav, footnavInner, footnavList } from "./style";
+import { footnav, footnavInner, footnavList, link } from "./style";
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserTie, faCopy, faCommentAlt, faCog } from "@fortawesome/free-solid-svg-icons";
@@ -17,22 +19,34 @@ const Footnav = () => {
             <span>소개</span>
           </li>
           <li>
-            <span>
-              <FontAwesomeIcon icon={faCopy} />
-            </span>
-            <span>포스트</span>
+            <Link href="/post">
+              <a css={link}>
+                <span>
+                  <FontAwesomeIcon icon={faCopy} />
+                </span>
+                <span>포스트</span>
+              </a>
+            </Link>
           </li>
           <li>
-            <span>
-              <FontAwesomeIcon icon={faCommentAlt} />
-            </span>
-            <span>게시판</span>
+            <Link href="/board">
+              <a css={link}>
+                <span>
+                  <FontAwesomeIcon icon={faCommentAlt} />
+                </span>
+                <span>게시판</span>
+              </a>
+            </Link>
           </li>
           <li>
-            <span>
-              <FontAwesomeIcon icon={faCog} />
-            </span>
-            <span>설정</span>
+            <Link href="/set">
+              <a css={link}>
+                <span>
+                  <FontAwesomeIcon icon={faCog} />
+                </span>
+                <span>설정</span>
+              </a>
+            </Link>
           </li>
         </ul>
       </div>

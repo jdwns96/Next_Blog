@@ -8,6 +8,7 @@ import { all } from "redux-saga/effects";
 import { createWrapper } from "next-redux-wrapper";
 
 import mode, { modeSaga } from "./mode";
+import sidenav from "./sidenav";
 
 // https://velog.io/@rlatmdgns94/Next.js-redux-redux-saga-%EC%A0%81%EC%9A%A9
 
@@ -16,7 +17,7 @@ export type RootState = ReturnType<typeof rootReducer>;
 
 // redux
 // 모든 리듀서를 하나로 모아 만든다.
-const rootReducer = combineReducers({ mode });
+const rootReducer = combineReducers({ mode, sidenav });
 
 // redux - saga
 // 리덕스 사가로 이루어진 미들웨어의 집합

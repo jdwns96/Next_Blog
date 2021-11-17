@@ -7,3 +7,8 @@ export const mode = (theme: Theme) => css`
   ${theme.deskTop} {
   }
 `;
+
+export const right = (theme: Theme) => css`
+  display: flex;
+  justify-content: flex-end;
+`;

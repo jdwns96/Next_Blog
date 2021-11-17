@@ -1,5 +1,5 @@
 import React from "react";
-import { mode } from "./style";
+import { mode, right } from "./style";
 import { Toggle, TooltipHost, Icon } from "@fluentui/react";
 
 import { useDispatch } from "react-redux";
@@ -13,7 +13,7 @@ const Mode = () => {
   };
 
   return (
-    <div>
+    <div css={right}>
       <Toggle
         label={
           <div>

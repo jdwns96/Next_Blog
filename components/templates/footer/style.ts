@@ -6,7 +6,7 @@ export const footer = (theme: Theme) => css`
   align-items: center;
 
   padding: 1rem 0;
-  /* margin-bottom: 72px; */
+  margin-bottom: 72px;
 
   ${theme.deskTop} {
     margin-bottom: 0;

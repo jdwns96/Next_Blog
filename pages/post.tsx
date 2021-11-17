@@ -7,14 +7,23 @@ import Footnav from "@components/templates/footnav";
 import Footer from "@components/templates/footer";
 import Sidenav from "@components/templates/sidenav";
 
-const Home: NextPage = (props) => {
+import PostCard from "@components/postcard";
+
+const Post: NextPage = (props) => {
   return (
     <>
       <Header />
       <Nav />
       <Sidenav />
       <Body>
-        <div></div>
+        <>
+          <PostCard />
+          <PostCard />
+          <PostCard />
+          <PostCard />
+          <PostCard />
+          <PostCard />
+        </>
       </Body>
       <Footer />
       <Footnav />
@@ -22,4 +31,4 @@ const Home: NextPage = (props) => {
   );
 };
 
-export default Home;
+export default Post;
