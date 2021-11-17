@@ -47,6 +47,3 @@ export const footerList = (theme: Theme) => css`
   ${theme.deskTop} {
   }
 `;
-export const mode = (theme: Theme) => css`
-  align-self: flex-end;
-`;

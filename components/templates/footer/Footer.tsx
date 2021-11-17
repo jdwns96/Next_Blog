@@ -2,12 +2,12 @@ import { useCallback } from "react";
 // fluentui
 import { Toggle, TooltipHost, Icon } from "@fluentui/react";
 // style
-import { footer, footerInner, footerLicense, footerList, mode } from "./style";
+import { footer, footerInner, footerLicense, footerList } from "./style";
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faYoutube, faFacebook } from "@fortawesome/free-brands-svg-icons";
 // component
-import Mode from "@components/mode/Mode";
+import Mode from "@components/mode";
 
 const Footer = () => {
   return (
@@ -28,21 +28,7 @@ const Footer = () => {
           </li>
         </ul>
         <p css={footerLicense}>lisenced by gle</p>
-        <div css={mode}>
-          <Toggle
-            label={
-              <div>
-                <span>MODE</span>
-                <TooltipHost content="Info tooltip">
-                  <Icon iconName="Info" />
-                </TooltipHost>
-              </div>
-            }
-            inlineLabel
-            onText="dark"
-            offText="light"
-          />
-        </div>
+        <Mode />
       </div>
     </footer>
   );

@@ -22,32 +22,26 @@ const Home: NextPage = (props) => {
       <Nav />
       <Body>
         <div>
-          <button
-            onClick={useCallback((e) => {
-              // @ts-ignore
-              props.setMode((prev) => !prev);
-            }, [])}
-          >
-            {/* @ts-ignore */}
-            {props.mode ? "dark" : "light"}
-          </button>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint velit amet.
-          Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint
-          velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem?
-          Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea
-          voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam
-          dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo
-          laboriosam dicta voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor
-          quo laboriosam dicta voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur
-          dolor quo laboriosam dicta voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore?
-          Consequuntur dolor quo laboriosam dicta voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam
-          dolore? Consequuntur dolor quo laboriosam dicta voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea
-          quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum
-          similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet
-          consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum
-          dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta, ex.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem?
+          Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam
+          dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore?
+          Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta,
+          ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta voluptates dolorem? Facere
+          sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta
+          voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur
+          dolor quo laboriosam dicta voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea
+          quam dolore? Consequuntur dolor quo laboriosam dicta voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta,
+          ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem?
+          Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam
+          dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore?
+          Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta,
+          ex.
         </div>
       </Body>
       <Footer />

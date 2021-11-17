@@ -62,7 +62,8 @@ export const tooltip = (theme: Theme) => css`
       /* 마름모 */
       z-index: 9999;
       box-shadow: none;
-      border: 1px solid ${theme.border};
+      border-left: 1px solid ${theme.border};
+      border-top: 1px solid ${theme.border};
       background-color: ${theme.borderBox};
     }
     & > div:nth-child(2) {

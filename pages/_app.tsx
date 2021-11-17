@@ -1,27 +1,31 @@
 import type { AppProps } from "next/app";
 import Head from "next/head";
-import Image from "next/image";
 
 import { ThemeProvider } from "@emotion/react";
 import { lightTheme, darkTheme } from "../styles/Theme";
 import GlobalStyle from "../styles/Global";
 
-import { useState } from "react";
+// 최신 next redux 는 Provider store 를 사용하지 않는다.
+import wrapper from "@store";
+
+// Redux
+import type { RootState } from "@store";
+import { useSelector } from "react-redux";
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [mode, setMode] = useState(true);
+  const { mode } = useSelector((store: RootState) => store.mode);
 
   return (
-    <ThemeProvider theme={!mode ? lightTheme : darkTheme}>
+    <ThemeProvider theme={mode ? darkTheme : lightTheme}>
       <GlobalStyle />
       <Head>
-        <title>Goolonge</title>
+        <title>GOOLONGE</title>
         <meta name="description" content="goolonge blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Component {...pageProps} mode={mode} setMode={setMode} />
+      <Component {...pageProps} />
     </ThemeProvider>
   );
 }
 
-export default MyApp;
+export default wrapper.withRedux(MyApp);
