@@ -3,13 +3,13 @@ import { mode } from "./style";
 import { Toggle, TooltipHost, Icon } from "@fluentui/react";
 
 import { useDispatch } from "react-redux";
-import { darkAction, lightAction } from "@store/mode";
+import { toggleActionSaga } from "@store/mode";
 
 const Mode = () => {
   const dispatch = useDispatch();
 
   const onToggle = (ev: React.MouseEvent<HTMLElement>, checked?: boolean) => {
-    checked ? dispatch(darkAction()) : dispatch(lightAction());
+    dispatch(toggleActionSaga(checked as boolean));
   };
 
   return (

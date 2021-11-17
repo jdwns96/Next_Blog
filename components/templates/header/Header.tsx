@@ -8,7 +8,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 // fluent
 import { DefaultButton, PrimaryButton } from "@fluentui/react";
 
-import logo from "@assets/images/logo.png";
+import logo from "@styles/assets/logo.png";
 
 const Header = () => {
   return (

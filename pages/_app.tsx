@@ -20,6 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GlobalStyle />
       <Head>
         <title>GOOLONGE</title>
+        <meta charSet="utf-8" />
         <meta name="description" content="goolonge blog" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

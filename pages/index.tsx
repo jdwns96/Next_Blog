@@ -21,7 +21,8 @@ const Home: NextPage = (props) => {
       <Header />
       <Nav />
       <Body>
-        <div>
+        <div></div>
+        {/* <div>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem?
           Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam
           dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime illum similique a, ea quam dolore?
@@ -42,7 +43,7 @@ const Home: NextPage = (props) => {
           illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta, ex. Lorem ipsum dolor sit amet
           consectetur adipisicing elit. Maxime illum similique a, ea quam dolore? Consequuntur dolor quo laboriosam dicta ipsa ea voluptates dolorem? Facere sint velit amet. Dicta,
           ex.
-        </div>
+        </div> */}
       </Body>
       <Footer />
       <Footnav />
