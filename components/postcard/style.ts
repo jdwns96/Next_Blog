@@ -37,49 +37,71 @@ export const leftBox = (theme: Theme) => css`
   background-color: #ccc;
 
   ${theme.deskTop} {
-    width: 260px;
+    width: 200px;
   }
 `;
 export const rightBox = (theme: Theme) => css`
   -webkit-flex: 1;
   flex: 1;
-
   width: 100%;
+`;
+export const rightBoxTitle = (theme: Theme) => css`
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding-bottom: 0.75rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid ${theme.border};
 
-  & > div:nth-child(1) {
-    font-weight: 600;
+  padding-right: 1.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  ${theme.deskTop} {
     font-size: 1.5rem;
-    padding-bottom: 1rem;
     margin-bottom: 1rem;
-    border-bottom: 1px solid ${theme.border};
+    padding-bottom: 1rem;
+  }
+`;
 
-    padding-right: 1.5rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    /* white-space: nowrap; */
+export const rightBoxTagBox = (theme: Theme) => css`
+  display: flex;
+  color: #fff;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  text-overflow: ellipsis;
+  ${theme.deskTop} {
   }
-  /* & > div:nth-child(2) {
-    color: #fff;
-    font-size: 0.85rem;
-    margin-bottom: 0.5rem;
-    padding-right: 1.5rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-  & > div:nth-child(3) {
-    font-size: 1rem;
-  }
+`;
+
+export const rightBoxTag = (theme: Theme) => css`
+  padding: 0.15rem;
+  margin-right: 0.5rem;
+  padding: 0.15rem 0.3rem;
+
+  color: ${theme.borderBox};
+  font-weight: 600;
+
+  border: 1px solid ${theme.border};
+  background-color: ${theme.btn};
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const rightBoxDate = (theme: Theme) => css`
+  border: 1px solid none;
+  /* margin: 0.2rem 0; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const rightBoxSubscribe = (theme: Theme) => css`
+  font-size: 1rem;
 
   ${theme.deskTop} {
-    & > div:nth-child(2) {
-      color: #fff;
-      font-size: 0.85rem;
-      margin-bottom: 1rem;
-    }
-    & > div:nth-child(3) {
-      font-size: 1rem;
-      max-height: none;
-      overflow: hidden;
-    }
-  } */
+    font-size: 1rem;
+    max-height: none;
+    overflow: hidden;
+  }
 `;

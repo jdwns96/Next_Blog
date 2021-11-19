@@ -1,11 +1,11 @@
+import { useMemo } from "react";
 import Link from "next/link";
 
 //style
 import { footnav, footnavInner, footnavList, link } from "./style";
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserTie, faCopy, faCommentAlt, faCog } from "@fortawesome/free-solid-svg-icons";
-// fluentui
+import { faCrown, faGift, faCommentAlt, faCog, faHome } from "@fortawesome/free-solid-svg-icons";
 
 const Footnav = () => {
   return (
@@ -13,28 +13,62 @@ const Footnav = () => {
       <div css={footnavInner}>
         <ul css={footnavList}>
           <li>
-            <span>
-              <FontAwesomeIcon icon={faUserTie} />
-            </span>
-            <span>소개</span>
+            <Link href="/profile">
+              <a css={link}>
+                <span>
+                  {useMemo(
+                    () => (
+                      <FontAwesomeIcon icon={faCrown} />
+                    ),
+                    [],
+                  )}
+                </span>
+                <span>프로필</span>
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/portfolio">
+              <a css={link}>
+                <span>
+                  {useMemo(
+                    () => (
+                      <FontAwesomeIcon icon={faGift} />
+                    ),
+                    [],
+                  )}
+                </span>
+                <span>포트폴리오</span>
+              </a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/">
+              <a css={link}>
+                <span>
+                  {useMemo(
+                    () => (
+                      <FontAwesomeIcon icon={faHome} />
+                    ),
+                    [],
+                  )}
+                </span>
+                <span>홈</span>
+              </a>
+            </Link>
           </li>
           <li>
             <Link href="/post">
               <a css={link}>
                 <span>
-                  <FontAwesomeIcon icon={faCopy} />
+                  {useMemo(
+                    () => (
+                      <FontAwesomeIcon icon={faCommentAlt} />
+                    ),
+                    [],
+                  )}
                 </span>
                 <span>포스트</span>
-              </a>
-            </Link>
-          </li>
-          <li>
-            <Link href="/board">
-              <a css={link}>
-                <span>
-                  <FontAwesomeIcon icon={faCommentAlt} />
-                </span>
-                <span>게시판</span>
               </a>
             </Link>
           </li>
@@ -42,7 +76,12 @@ const Footnav = () => {
             <Link href="/set">
               <a css={link}>
                 <span>
-                  <FontAwesomeIcon icon={faCog} />
+                  {useMemo(
+                    () => (
+                      <FontAwesomeIcon icon={faCog} />
+                    ),
+                    [],
+                  )}
                 </span>
                 <span>설정</span>
               </a>

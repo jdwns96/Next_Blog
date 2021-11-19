@@ -1,20 +1,32 @@
+import Link from "next/link";
+
+import { nav, navList, list, tooltip, tooltipLi, tooltipLabel } from "./style";
 import { TooltipHost, TooltipDelay, DirectionalHint, ITooltipProps } from "@fluentui/react";
-import { nav, navList, tooltip, tooltipLi } from "./style";
 
 const PostProps: ITooltipProps = {
   onRenderContent: () => (
     <ul style={{ margin: 10, padding: 0 }} css={tooltipLi}>
-      <li>전체 포스트</li>
-      <li>자바스크립트</li>
-      <li>타입스크립트</li>
-    </ul>
-  ),
-};
-const boardProps: ITooltipProps = {
-  onRenderContent: () => (
-    <ul style={{ margin: 10, padding: 0 }} css={tooltipLi}>
-      <li>전체 게시판</li>
-      <li>자유 게시판</li>
+      <li>
+        <Link href="/post">
+          <a css={tooltipLabel}>
+            <span>전체 포스트</span>
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/post/js">
+          <a css={tooltipLabel}>
+            <span>자바스크립트</span>
+          </a>
+        </Link>
+      </li>
+      <li>
+        <Link href="/post/ts">
+          <a css={tooltipLabel}>
+            <span>타입스크립트</span>
+          </a>
+        </Link>
+      </li>
     </ul>
   ),
 };
@@ -24,20 +36,41 @@ const Nav = () => {
     <div css={nav}>
       <ul css={navList}>
         <li>
-          <span>소개</span>
+          <Link href="/profile">
+            <a css={list}>
+              <span className="list__label">프로필</span>
+            </a>
+          </Link>
         </li>
         <li>
-          <TooltipHost tooltipProps={PostProps} delay={TooltipDelay.zero} closeDelay={100} directionalHint={DirectionalHint.bottomCenter} css={tooltip}>
-            <span>포스트</span>
-          </TooltipHost>
+          <Link href="/portfolio">
+            <a css={list}>
+              <span className="list__label">포트폴리오</span>
+            </a>
+          </Link>
         </li>
         <li>
-          <TooltipHost tooltipProps={boardProps} delay={TooltipDelay.zero} closeDelay={100} directionalHint={DirectionalHint.bottomCenter} css={tooltip}>
-            <span>게시판</span>
-          </TooltipHost>
+          <Link href="/">
+            <a css={list}>
+              <span className="list__label">홈</span>
+            </a>
+          </Link>
         </li>
         <li>
-          <span>설정</span>
+          <Link href="/post">
+            <a css={list}>
+              <TooltipHost tooltipProps={PostProps} delay={TooltipDelay.zero} closeDelay={100} directionalHint={DirectionalHint.bottomCenter} css={tooltip}>
+                <span className="list__label">포스트</span>
+              </TooltipHost>
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/set">
+            <a css={list}>
+              <span className="list__label">설정</span>
+            </a>
+          </Link>
         </li>
       </ul>
     </div>

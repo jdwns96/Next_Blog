@@ -12,7 +12,7 @@ const media = {
 };
 
 const light = {
-  fontColor: "#000",
+  fontColor: "#222",
   backgroundColor: "#e9ecef",
 
   border: "#000",

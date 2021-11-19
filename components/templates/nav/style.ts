@@ -43,16 +43,27 @@ export const navList = (theme: Theme) => css`
         align-items: center;
         height: 100%;
       }
-
-      & > div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-      }
     }
   }
 `;
+export const list = (theme: Theme) => css`
+  height: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+  span.list__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+`;
+
 export const tooltip = (theme: Theme) => css`
   ${theme.deskTop} {
     & > div {
@@ -78,12 +89,19 @@ export const tooltipLi = (theme: Theme) => css`
       padding: 0.5rem;
       font-size: 1.15rem;
       font-weight: 500;
-      color: ${theme.fontColor};
+
       cursor: pointer;
 
       &:hover {
         /* background-color: ${theme.backgroundColor}; */
       }
+    }
+  }
+`;
+export const tooltipLabel = (theme: Theme) => css`
+  ${theme.deskTop} {
+    span {
+      color: ${theme.fontColor};
     }
   }
 `;
