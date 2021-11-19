@@ -3,7 +3,7 @@ import { curtain, curtainOff, nav, navOff } from "./style";
 
 import type { RootState } from "@store";
 import { useSelector, useDispatch } from "react-redux";
-import { hambergerAction } from "@store/sidenav";
+import { hambergerAction } from "@store/sidenav/action";
 
 const Sidenav = () => {
   const dispatch = useDispatch();

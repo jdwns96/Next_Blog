@@ -3,7 +3,7 @@ import { mode, right } from "./style";
 import { Toggle, TooltipHost, Icon } from "@fluentui/react";
 
 import { useDispatch } from "react-redux";
-import { toggleActionSaga } from "@store/mode";
+import { toggleActionSaga } from "@store/mode/action";
 
 const Mode = () => {
   const dispatch = useDispatch();

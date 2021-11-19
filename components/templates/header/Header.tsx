@@ -11,7 +11,7 @@ import { DefaultButton, PrimaryButton } from "@fluentui/react";
 import logo from "@styles/assets/logo.png";
 
 import { useDispatch } from "react-redux";
-import { hambergerAction } from "@store/sidenav";
+import { hambergerAction } from "@store/sidenav/action";
 
 const Header = () => {
   const dispatch = useDispatch();

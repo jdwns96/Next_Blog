@@ -1,11 +1,9 @@
-type SidenavAction = ReturnType<typeof hambergerAction>;
-interface SidenavState {
+import { HAMBERGER, hambergerAction } from "./action";
+
+export type SidenavAction = ReturnType<typeof hambergerAction>;
+export interface SidenavState {
   hamberger: boolean;
 }
-
-const HAMBERGER = "mode/HAMBERGER" as const;
-
-export const hambergerAction = () => ({ type: HAMBERGER });
 
 const initialState: SidenavState = {
   hamberger: false,

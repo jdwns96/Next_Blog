@@ -1,14 +1,12 @@
 import { createStore, combineReducers, applyMiddleware, compose } from "redux";
+import rootReducer from "./rootReducer";
+import rootSaga from "./rootSaga";
 
 import { composeWithDevTools } from "redux-devtools-extension";
 
 import createSagaMiddleware from "redux-saga";
-import { all } from "redux-saga/effects";
 
 import { createWrapper } from "next-redux-wrapper";
-
-import mode, { modeSaga } from "./mode";
-import sidenav from "./sidenav";
 
 // https://velog.io/@rlatmdgns94/Next.js-redux-redux-saga-%EC%A0%81%EC%9A%A9
 
@@ -16,14 +14,8 @@ import sidenav from "./sidenav";
 export type RootState = ReturnType<typeof rootReducer>;
 
 // redux
-// 모든 리듀서를 하나로 모아 만든다.
-const rootReducer = combineReducers({ mode, sidenav });
-
-// redux - saga
-// 리덕스 사가로 이루어진 미들웨어의 집합
-function* rootSaga() {
-  yield all([modeSaga()]);
-}
+// 모든 리듀서를 하나로 모아 만든다. 일반 CRA 형태에선 이렇게 사용했다.
+// const rootReducer = combineReducers({ mode, sidenav });
 
 const configureStore = () => {
   // 리덕스 사가를 미들웨어와 연결시키기 위해 인스턴스를 생성한다.
