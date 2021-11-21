@@ -1,3 +1,4 @@
+import image1 from "@styles/assets/image1.jpeg";
 import { css, Theme } from "@emotion/react";
 
 export const postcard = (theme: Theme) => css`
@@ -23,7 +24,8 @@ export const postcard = (theme: Theme) => css`
 
   ${theme.mini} {
     flex-direction: column;
-    height: 140px;
+    /* height: 140px; */
+    height: 380px;
     padding: 0.75rem;
   }
 
@@ -34,22 +36,32 @@ export const postcard = (theme: Theme) => css`
   }
 `;
 export const leftBox = (theme: Theme) => css`
+  position: relative;
   width: 170px;
   height: 100%;
-
   margin-right: 2rem;
-
   border: 1px solid ${theme.border};
-  background-color: #ccc;
 
-  /* ${theme.mini} {
-    margin-right: 0;
-    margin-bottom: 1rem;
-    width: 100%;
-    height: 200px;
-  } */
+  span {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: fill;
+    vertical-align: top;
+  }
+
+  img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: fill;
+    vertical-align: top !important;
+  }
+
   ${theme.mini} {
-    display: none;
+    /* display: none; */
+    width: 100%;
+    height: 60%;
+    margin-right: 0;
+    margin-bottom: 0.75rem;
   }
 
   ${theme.deskTop} {

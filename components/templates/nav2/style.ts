@@ -3,6 +3,7 @@ import { css, Theme } from "@emotion/react";
 export const nav = (theme: Theme) => css`
   position: sticky;
   top: 72px;
+  z-index: 9999;
 
   width: 100%;
   height: 40px;

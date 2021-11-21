@@ -3,6 +3,7 @@ import { css, Theme } from "@emotion/react";
 export const head = (theme: Theme) => css`
   position: sticky;
   top: 0;
+  z-index: 9999;
   width: 100%;
   height: 72px;
   border-bottom: 1px solid ${theme.border};
