@@ -8,7 +8,8 @@ const size = {
 
 // default size mobile
 const media = {
-  deskTop: "@media screen and (min-width: 768px)",
+  mini: "@media screen and (max-width: 575px)", // 576
+  deskTop: "@media screen and (min-width: 767px)", // 768
 };
 
 const light = {

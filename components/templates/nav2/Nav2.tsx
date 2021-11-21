@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { nav, navInner, list } from "./style";
+import { nav, navInner, list, board } from "./style";
 
 interface Props {}
 
@@ -28,6 +28,11 @@ const Nav2 = (props: Props) => {
             </a>
           </Link>
         </li>
+        <div css={board}>
+          <Link href="/post/board">
+            <a css={list}>글쓰기</a>
+          </Link>
+        </div>
       </ul>
     </nav>
   );

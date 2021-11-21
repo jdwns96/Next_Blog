@@ -21,6 +21,12 @@ export const postcard = (theme: Theme) => css`
     border-color: ${theme.icon};
   }
 
+  ${theme.mini} {
+    flex-direction: column;
+    height: 140px;
+    padding: 0.75rem;
+  }
+
   ${theme.deskTop} {
     height: 220px;
     padding: 1rem;
@@ -36,6 +42,16 @@ export const leftBox = (theme: Theme) => css`
   border: 1px solid ${theme.border};
   background-color: #ccc;
 
+  /* ${theme.mini} {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    width: 100%;
+    height: 200px;
+  } */
+  ${theme.mini} {
+    display: none;
+  }
+
   ${theme.deskTop} {
     width: 200px;
   }
@@ -47,28 +63,42 @@ export const rightBox = (theme: Theme) => css`
 `;
 export const rightBoxTitle = (theme: Theme) => css`
   font-weight: 600;
-  font-size: 1.25rem;
-  padding-bottom: 0.75rem;
+  font-size: 1.5rem;
+  /* padding-bottom: 0.75rem; */
   margin-bottom: 0.5rem;
-  border-bottom: 1px solid ${theme.border};
+  /* border-bottom: 1px solid ${theme.border}; */
 
-  padding-right: 1.5rem;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; // 줄 관련인듯
+  overflow: hidden;
+  max-height: 33px;
+
   overflow: hidden;
   text-overflow: ellipsis;
   ${theme.deskTop} {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
+    font-size: 1.75rem;
+    margin-bottom: 0.75rem;
+    /* padding-bottom: 1rem; */
   }
+`;
+
+export const rightBoxLine = (theme: Theme) => css`
+  margin-bottom: 0.75rem;
+  border-color: ${theme.border};
 `;
 
 export const rightBoxTagBox = (theme: Theme) => css`
   display: flex;
+  flex-wrap: wrap;
+
   color: #fff;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   margin-bottom: 0.5rem;
   text-overflow: ellipsis;
+
   ${theme.deskTop} {
+    font-size: 0.8rem;
   }
 `;
 
@@ -97,10 +127,14 @@ export const rightBoxDate = (theme: Theme) => css`
 `;
 
 export const rightBoxSubscribe = (theme: Theme) => css`
-  font-size: 1rem;
+  font-size: 0.8rem;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7; // 줄 관련인듯
 
   ${theme.deskTop} {
-    font-size: 1rem;
+    font-size: 0.9rem;
     max-height: none;
     overflow: hidden;
   }
