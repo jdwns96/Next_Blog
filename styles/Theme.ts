@@ -18,6 +18,7 @@ const light = {
 
   border: "#000",
   borderBox: "#ddd",
+  borderSubBox: "#cccccc",
 
   icon: "#000",
 
@@ -34,6 +35,7 @@ const dark = {
 
   border: "#615c59",
   borderBox: "#222222",
+  borderSubBox: "#333333",
 
   icon: "#beb598",
 

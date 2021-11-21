@@ -13,6 +13,7 @@ export const postcard = (theme: Theme) => css`
 
   border: 1px solid ${theme.border};
   background-color: ${theme.borderBox};
+  border-radius: 1px;
 
   overflow: hidden;
   cursor: pointer;
@@ -20,12 +21,16 @@ export const postcard = (theme: Theme) => css`
 
   &:hover {
     border-color: ${theme.icon};
+
+    .postcard__img_box {
+      border-color: ${theme.icon} !important;
+    }
   }
 
   ${theme.mini} {
     flex-direction: column;
     /* height: 140px; */
-    height: 380px;
+    height: 400px;
     padding: 0.75rem;
   }
 
@@ -42,17 +47,20 @@ export const leftBox = (theme: Theme) => css`
   margin-right: 2rem;
   border: 1px solid ${theme.border};
 
+  transition: 0.3s;
+  background-color: ${theme.borderSubBox};
+
   span {
     width: 100% !important;
     height: 100% !important;
-    object-fit: fill;
+    object-fit: contain;
     vertical-align: top;
   }
 
   img {
     width: 100% !important;
     height: 100% !important;
-    object-fit: fill;
+    object-fit: contain;
     vertical-align: top !important;
   }
 
@@ -143,7 +151,7 @@ export const rightBoxSubscribe = (theme: Theme) => css`
 
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 7; // 줄 관련인듯
+  -webkit-line-clamp: 5; // 줄 관련인듯
 
   ${theme.deskTop} {
     font-size: 0.9rem;

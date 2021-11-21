@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import dynamic from "next/dynamic";
 
 import Header from "@components/templates/header";
 import Nav from "@components/templates/nav";
@@ -8,14 +9,12 @@ import Footnav from "@components/templates/footnav";
 import Footer from "@components/templates/footer";
 import Sidenav from "@components/templates/sidenav";
 
-import Board from "@components/board";
+const Board = dynamic(() => import("@components/board"), { ssr: false });
 
 const Post: NextPage = (props) => {
   return (
     <>
       <Header />
-      <Nav />
-      <Sidenav />
       <Body>
         <>
           <Board />

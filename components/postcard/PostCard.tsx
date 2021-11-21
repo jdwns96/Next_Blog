@@ -1,13 +1,14 @@
 import { postcard, leftBox, rightBox, rightBoxTitle, rightBoxLine, rightBoxTagBox, rightBoxTag, rightBoxDate, rightBoxSubscribe } from "./style";
 import Image from "next/image";
-import image1 from "@styles/assets/image1.jpeg";
+// import image1 from "@styles/assets/image1.jpeg";
+import image1 from "@styles/assets/logo.png";
 
 interface Props {}
 
 const PostCard = (props: Props) => {
   return (
     <article css={postcard}>
-      <div css={leftBox}>
+      <div css={leftBox} className="postcard__img_box">
         <Image src={image1} alt="sumnail" />
       </div>
       <div css={rightBox}>

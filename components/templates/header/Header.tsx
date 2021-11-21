@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import Image from "next/image";
 // style
-import { head, headInner, headLogo, headHamberger, headLoginBox, loginBtn, memberBtn } from "./style";
+import { head, headInner, headLogo, headHamberger, headLoginBox, loginBtn, memberBtn, userBox } from "./style";
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
@@ -14,6 +14,8 @@ import { useDispatch } from "react-redux";
 import { hambergerAction } from "@store/sidenav/action";
 
 const Header = () => {
+  const isLogin = true;
+
   const dispatch = useDispatch();
 
   const onHamberger = (e: React.MouseEvent) => {
@@ -34,10 +36,19 @@ const Header = () => {
             [],
           )}
         </div>
-        <div css={headLoginBox}>
-          <DefaultButton text="로그인" css={loginBtn} />
-          <PrimaryButton text="회원가입" css={memberBtn} />
-        </div>
+        {isLogin ? (
+          <div css={userBox}>
+            {/* <p className="userBox__namespace">user</p> */}
+            <p className="userBox__user">
+              <span></span>
+            </p>
+          </div>
+        ) : (
+          <div css={headLoginBox}>
+            <DefaultButton text="로그인" css={loginBtn} />
+            <PrimaryButton text="회원가입" css={memberBtn} />
+          </div>
+        )}
       </div>
     </header>
   );

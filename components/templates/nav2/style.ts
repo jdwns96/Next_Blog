@@ -9,7 +9,6 @@ export const nav = (theme: Theme) => css`
   height: 40px;
   border-bottom: 1px solid ${theme.border};
   background-color: ${theme.borderBox};
-  overflow-x: auto;
 
   display: flex;
   justify-content: center;
@@ -26,6 +25,20 @@ export const navInner = (theme: Theme) => css`
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  ${theme.deskTop} {
+    width: 90%;
+  }
+`;
+export const navUl = (theme: Theme) => css`
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 85px;
+
+  white-space: nowrap;
+  overflow-x: auto;
 
   li {
     font-size: 0.85rem;
@@ -44,6 +57,11 @@ export const navInner = (theme: Theme) => css`
   }
 `;
 export const list = (theme: Theme) => css`
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   span {
     padding: 0.5rem;
   }
@@ -55,16 +73,15 @@ export const board = (theme: Theme) => css`
 
   width: 85px;
   height: 100%;
+  background-color: ${theme.borderSubBox};
+  border-left: 1px solid ${theme.border};
+  border-right: 1px solid ${theme.border};
 
-  font-weight: 600;
   font-size: 0.9rem;
   cursor: pointer;
 
   display: flex;
   justify-content: center;
   align-items: center;
-
-  border: 2px solid ${theme.border};
-  background-color: ${theme.btn};
-  color: #000;
+  transition: 0.2s;
 `;

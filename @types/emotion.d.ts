@@ -7,6 +7,7 @@ declare module "@emotion/react" {
 
     border: string;
     borderBox: string;
+    borderSubBox: string;
     icon: string;
     btn: string;
 

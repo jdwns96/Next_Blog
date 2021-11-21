@@ -83,3 +83,27 @@ export const loginBtn = (theme: Theme) => css`
   &:hover {
   }
 `;
+export const userBox = (theme: Theme) => css`
+  display: none;
+  ${theme.deskTop} {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > .userBox__namespace {
+      font-size: 0.9rem;
+      border: 1px solid ${theme.border};
+      background-color: #333;
+      padding: 0.25rem 0.5rem;
+    }
+
+    & > .userBox__user {
+      width: 48px;
+      height: 48px;
+      border: 1px solid ${theme.border};
+      border-radius: 50%;
+      margin-left: 1rem;
+      background-color: #333;
+    }
+  }
+`;
