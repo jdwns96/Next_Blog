@@ -104,6 +104,11 @@ export const userBox = (theme: Theme) => css`
       border-radius: 50%;
       margin-left: 1rem;
       background-color: #333;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
     }
   }
 `;

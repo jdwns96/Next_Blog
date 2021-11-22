@@ -4,7 +4,7 @@ import Image from "next/image";
 import { head, headInner, headLogo, headHamberger, headLoginBox, loginBtn, memberBtn, userBox } from "./style";
 // fontawesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faUser } from "@fortawesome/free-solid-svg-icons";
 // fluent
 import { DefaultButton, PrimaryButton } from "@fluentui/react";
 
@@ -40,7 +40,7 @@ const Header = () => {
           <div css={userBox}>
             {/* <p className="userBox__namespace">user</p> */}
             <p className="userBox__user">
-              <span></span>
+              <FontAwesomeIcon icon={faUser} />
             </p>
           </div>
         ) : (

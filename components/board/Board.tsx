@@ -1,5 +1,9 @@
 import { useRef } from "react";
 
+// fontawesome
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+
 import { Editor } from "@toast-ui/react-editor";
 import "@toast-ui/editor/dist/toastui-editor.css";
 
@@ -18,7 +22,10 @@ function Board(): JSX.Element {
 
   return (
     <>
-      <div css={bread}> - 포스트</div>
+      <div css={bread}>
+        <FontAwesomeIcon icon={faArrowLeft} />
+        <span>포스트</span>
+      </div>
       <div css={board}>
         <div css={boardInner}>
           <div css={boardHead}>

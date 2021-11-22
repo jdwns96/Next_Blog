@@ -22,7 +22,8 @@ export const curtain = (theme: Theme) => css`
 const navCss = `
     padding: 1rem;
     position: fixed;
-    width: 250px;
+    max-width: 270px;
+    width: 100%;
     height: 100vh;
     top: 0;
     z-index: 9999;
@@ -39,13 +40,30 @@ export const nav = (theme: Theme) => css`
   border-left: 1px solid ${theme.border};
   background-color: ${theme.borderBox};
   right: 0;
+`;
+export const closeBtn = (theme: Theme) => css`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 
-  & > div:nth-child(1) {
-    height: 60px;
-  }
-  & > div:nth-child(2) {
-    height: 130px;
-  }
-  & > div:nth-child(3) {
+  span {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
+export const userBox = (theme: Theme) => css`
+  width: 100%;
+  height: 72px;
+  margin-bottom: 1rem;
+
+  border: 1px solid ${theme.border};
+  background-color: ${theme.borderSubBox};
+`;
+export const listBox = (theme: Theme) => css``;

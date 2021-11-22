@@ -10,6 +10,7 @@ export const bread = (theme: Theme) => css`
   align-items: center;
   border: 1px solid ${theme.border};
   background-color: ${theme.borderBox};
+  cursor: pointer;
 `;
 
 export const board = (theme: Theme) => css`

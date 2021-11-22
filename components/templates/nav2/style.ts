@@ -14,7 +14,7 @@ export const nav = (theme: Theme) => css`
   justify-content: center;
   align-items: center;
   ${theme.deskTop} {
-    top: 144px;
+    top: 124px;
   }
 `;
 export const navInner = (theme: Theme) => css`

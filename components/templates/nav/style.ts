@@ -7,7 +7,7 @@ export const nav = (theme: Theme) => css`
   top: 72px;
 
   width: 100%;
-  height: 72px;
+  height: 52px;
   border-bottom: 1px solid ${theme.border};
   background-color: ${theme.borderBox};
 

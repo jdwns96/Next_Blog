@@ -15,6 +15,8 @@ const Post: NextPage = (props) => {
   return (
     <>
       <Header />
+      <Nav />
+      <Sidenav />
       <Body>
         <>
           <Board />
