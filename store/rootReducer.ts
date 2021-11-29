@@ -3,6 +3,7 @@ import { HYDRATE } from "next-redux-wrapper";
 
 import mode from "./mode/reducer";
 import sidenav from "./sidenav/reducer";
+import login from "./login/reducer";
 
 const rootReducer = combineReducers({
   index: (state: object = {}, action) => {
@@ -18,6 +19,7 @@ const rootReducer = combineReducers({
   },
   mode,
   sidenav,
+  login,
 });
 
 export default rootReducer;

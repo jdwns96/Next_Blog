@@ -33,7 +33,7 @@ export const navOff = (theme: Theme) => css`
   ${navCss}
   border-left: 1px solid ${theme.border};
   background-color: ${theme.borderBox};
-  right: -250px;
+  right: -270px;
 `;
 export const nav = (theme: Theme) => css`
   ${navCss}
